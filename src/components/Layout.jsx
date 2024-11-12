@@ -38,7 +38,7 @@ function AppLayout(props) {
         <main className="content">{props.children}</main>
       </Layout>
     </Layout>
-      <main className="content">{props.children}</main>
+    
      </>
     );
   }

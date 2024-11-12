@@ -25,7 +25,7 @@ const MenuList = ({ darkTheme }) => {
           label: <Link to="/editarSessao">Editar Sessão</Link>
         },
         { key: 'excluirSessao', 
-          label: <Link to="/excluirSessao">Editar Sessão</Link>
+          label: <Link to="/excluirSessao">Excluir Sessão</Link>
         },
       ],
     },

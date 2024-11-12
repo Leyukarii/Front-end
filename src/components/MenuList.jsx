@@ -18,9 +18,15 @@ const MenuList = ({ darkTheme }) => {
         { key: 'listarSessao',
           label: <Link to="/sessoes">Listar Sessões</Link>
         },
-        { key: 'buscarSessao', label: 'Buscar Sessão' },
-        { key: 'editarSessao', label: 'Editar Sessão' },
-        { key: 'excluirSessao', label: 'Excluir Sessão' },
+        { key: 'buscarSessao', 
+          label: <Link to="/buscarSessao">Buscar Sessão</Link>
+        },
+        { key: 'editarSessao', 
+          label: <Link to="/editarSessao">Editar Sessão</Link>
+        },
+        { key: 'excluirSessao', 
+          label: <Link to="/excluirSessao">Editar Sessão</Link>
+        },
       ],
     },
     {

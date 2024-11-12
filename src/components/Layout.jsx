@@ -2,7 +2,7 @@ import '../App.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../index';
-import { Button, Layout, theme } from 'antd';
+import { Button, Layout } from 'antd';
 import Logo from './Logo';
 import MenuList from './MenuList';
 import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
@@ -13,10 +13,6 @@ const { Header, Sider } = Layout;
 function AppLayout(props) {
 
     const [collapsed, setCollapsed] = useState(false);
-    const {
-        token: { colorBgontainer },
-    } = theme.useToken();
-
     const [darkTheme, setDarkTheme] = useState(false);
     const toggleTheme = () => {
         setDarkTheme(!darkTheme);
@@ -31,14 +27,14 @@ function AppLayout(props) {
         <ToggleThemeButton darkTheme={darkTheme} toggleTheme={toggleTheme} />
       </Sider>
       <Layout>
-        <Header style={{ padding: 0, background: colorBgontainer }}>
+        <Header style={{ padding: 0, background: '#141414' }}>
           <Button type='text' className="toggle" onClick={() => setCollapsed(!collapsed)}
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />} />
         </Header>
         <main className="content">{props.children}</main>
       </Layout>
     </Layout>
-    
+
      </>
     );
   }

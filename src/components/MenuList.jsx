@@ -97,11 +97,21 @@ const MenuList = ({ darkTheme }) => {
       icon: <ShoppingCartOutlined />,
       label: 'Bomboniere',
       children: [
-        { key: 'criarBomboniere', label: 'Adicionar Bomboniere' },
-        { key: 'listarBomboniere', label: 'Listar Bomboniere' },
-        { key: 'buscarBomboniere', label: 'Buscar Bomboniere' },
-        { key: 'editarBomboniere', label: 'Editar Bomboniere' },
-        { key: 'excluirBomboniere', label: 'Excluir Bomboniere' },
+        { key: 'criarProduto', 
+          label: <Link to="/criarProduto">Adicionar Produto</Link>  
+        },
+        { key: 'listarProduto', 
+          label: <Link to="/listarProduto">Listar Produtos</Link> 
+        },
+        { key: 'buscarProduto', 
+          label: <Link to="/buscarProduto">Buscar Produto</Link> 
+        },
+        { key: 'editarProduto', 
+          label: <Link to="/editarProduto">Editar Produto</Link> 
+        },
+        { key: 'excluirProduto', 
+          label:  <Link to="/excluirProduto">Excluir Produto</Link> 
+        },
       ],
     },
   ];

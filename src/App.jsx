@@ -21,6 +21,13 @@ import EditarIngresso from './pages/ingresso/EditarIngresso';
 import ExcluirIngresso from './pages/ingresso/ExcluirIngresso';
 import ListaDeIngressos from './pages/ingresso/ListarIngresso';
 
+//Importar Sala
+import CriarSala from './pages/sala/CriarSala';
+import BuscarSala from './pages/sala/BuscarSala';
+import EditarSala from './pages/sala/EditarSala';
+import ExcluirSala from './pages/sala/ExcluirSala';
+import ListarSala from './pages/sala/ListarSala';
+
 function App() {
   return (
     <Routes>
@@ -42,6 +49,12 @@ function App() {
        <Route path="/editarIngresso" element={<AppLayout><EditarIngresso /></AppLayout>} />
        <Route path="/excluirIngresso" element={<AppLayout><ExcluirIngresso /></AppLayout>} />
        <Route path="/listarIngresso" element={<AppLayout><ListaDeIngressos /></AppLayout>} />
+
+       <Route path="/criarSala" element={<AppLayout><CriarSala /></AppLayout>} />
+       <Route path="/buscarSala" element={<AppLayout><BuscarSala /></AppLayout>} />
+       <Route path="/editarSala" element={<AppLayout><EditarSala /></AppLayout>} />
+       <Route path="/excluirSala" element={<AppLayout><ExcluirSala /></AppLayout>} />
+       <Route path="/listarSala" element={<AppLayout><ListarSala /></AppLayout>} />
     </Routes>
   );
 }

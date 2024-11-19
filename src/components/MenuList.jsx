@@ -75,11 +75,21 @@ const MenuList = ({ darkTheme }) => {
       icon: <ShopOutlined />,
       label: 'Salas',
       children: [
-        { key: 'criarSala', label: 'Adicionar Sala' },
-        { key: 'listarSala', label: 'Listar Sala' },
-        { key: 'buscarSala', label: 'Buscar Sala' },
-        { key: 'editarSala', label: 'Editar Sala' },
-        { key: 'excluirSala', label: 'Excluir Sala' },
+        { key: 'criarSala', 
+          label: <Link to="/criarSala">Adicionar Sala</Link> 
+        },
+        { key: 'listarSala', 
+          label: <Link to="/listarSala">Listar Salas</Link>  
+        },
+        { key: 'buscarSala', 
+          label: <Link to="/buscarSala">Buscar Sala</Link> 
+        },
+        { key: 'editarSala', 
+          label: <Link to="/editarSala">Editar Sala</Link>  
+        },
+        { key: 'excluirSala', 
+          label: <Link to="/excluirSala">Excluir Sala</Link>  
+        },
       ],
     },
     {

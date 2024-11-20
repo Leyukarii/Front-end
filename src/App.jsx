@@ -35,6 +35,12 @@ import EditarProduto from './pages/bombonier/EditarProduto'
 import ExcluirProduto from './pages/bombonier/ExcluirProduto'
 import ListarProduto from './pages/bombonier/ListarProduto'
 
+import BuscarUsuario from './pages/usuario/BuscarUsuario'
+import CriarUsuario from './pages/usuario/CriarUsuario'
+import EditarUsuario from './pages/usuario/EditarUsuario'
+import ExcluirUsuario from './pages/usuario/ExcluirUsuario'
+import ListarUsuario from './pages/usuario/ListarUsuario'
+
 function App() {
   return (
     <Routes>
@@ -68,6 +74,12 @@ function App() {
        <Route path="/editarProduto" element={<AppLayout><EditarProduto /></AppLayout>} />
        <Route path="/excluirProduto" element={<AppLayout><ExcluirProduto /></AppLayout>} />
        <Route path="/listarProduto" element={<AppLayout><ListarProduto /></AppLayout>} />
+
+       <Route path="/criarUsuario" element={<AppLayout><CriarUsuario /></AppLayout>} />
+       <Route path="/buscarUsuario" element={<AppLayout><BuscarUsuario /></AppLayout>} />
+       <Route path="/editarUsuario" element={<AppLayout><EditarUsuario /></AppLayout>} />
+       <Route path="/excluirUsuario" element={<AppLayout><ExcluirUsuario /></AppLayout>} />
+       <Route path="/listarUsuario" element={<AppLayout><ListarUsuario /></AppLayout>} />
        
     </Routes>
   );
